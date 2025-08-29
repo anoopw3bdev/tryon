@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Image to LLM Uploader",
+  "description": "Collect an image from the user and send it to an LLM API.",
+  "version": "0.1.0",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Send image to LLM"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "downloads",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*",
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
+  }
+}
