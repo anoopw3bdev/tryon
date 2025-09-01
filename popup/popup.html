@@ -6,37 +6,27 @@
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
-    <title>Fashion Try-On</title>
+    <title>Fit Check</title>
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
     <div id="app">
       <div class="header">
-        <h1>✨ Fashion Try-On</h1>
-        <p>Upload your photo to try on outfits</p>
-      </div>
-
-      <div class="upload-section">
-        <label for="fileInput" class="upload-label">
-          <div class="upload-icon">📷</div>
-          <span>Choose Your Photo</span>
-        </label>
-        <input id="fileInput" type="file" accept="image/*" />
+        <h1>Fit Check</h1>
+        <p>Select your picture to Fit Check outfits</p>
       </div>
 
       <div id="previewContainer" class="preview-container">
         <img id="preview" alt="preview" />
       </div>
 
-      <button id="getImage">Get Image URL</button>
-
-      <button id="sendBtn" disabled class="send-button">
-        <span class="button-text">Try On Outfit</span>
-        <span class="button-icon">🚀</span>
-      </button>
-
-      <div id="status" class="status"></div>
-      <div id="result" class="result"></div>
+      <div class="upload-section">
+        <label for="fileInput" class="upload-label">
+          <div class="upload-icon">📷</div>
+          <span>Select your picture</span>
+        </label>
+        <input id="fileInput" type="file" accept="image/*" />
+      </div>
     </div>
     <script type="module" src="popup.js"></script>
   </body>
