@@ -16,7 +16,8 @@ This project is a Chrome extension that lets users try new outfits on a person u
 ## Platforms supported currently
 
 1. Nykaa
-2. Myntra (Coming soon)
+2. Myntra
+3. More platforms coming soon...
 
 ## 🚀 Setup Instructions
 
@@ -31,17 +32,30 @@ This project is a Chrome extension that lets users try new outfits on a person u
     Open the file `service-worker.js` and set your Nano Banana API key:
 
     ```js
-    const API_KEY = "nb_live_your_actual_key_here";
+    const API_KEY = "replace this with your API key";
+    
     ```
+    Steps to get your API KEY.
 
-3.  **Load the extension in Chrome**
+    - Go to Google AI Studio (https://aistudio.google.com/apikey).
+    - Log in with your Google Account.
+    - Look for and click the “Get API Key” button (usually in the dashboard or main menu).
+    - Click “Create API Key.”
+    - If prompted, select an existing Google Cloud project or create a new one.
+
+    > ⚠️ **Warning**  
+    > Please note that the free-tier API may not always work as expected.  
+    > You might need to use the free credits provided by google cloud.
+
+
+4.  **Load the extension in Chrome**
 
     - Open Chrome and go to `chrome://extensions/`
     - Turn on **Developer mode**
     - Click **Load unpacked**
     - Select the project folder (where `manifest.json` is located)
 
-4.  **Use the extension**
+5.  **Use the extension**
     - Click the "AI Outfit Fit Check" icon in the Chrome toolbar
     - Upload your photo
     - Click "Fit Check"
