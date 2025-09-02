@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyCGIFZLNeeodCTvENAz8b-thLNBGRLI0Q8";
+const API_KEY = "Your API key here";
 const MODEL = "gemini-2.5-flash-image-preview";
 
 async function callGemini({

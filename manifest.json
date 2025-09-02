@@ -21,7 +21,12 @@
   "content_scripts": [
     {
       "matches": ["*://www.nykaafashion.com/*"],
-      "js": ["content-script.js"],
+      "js": ["content-scripts/nykaa-script.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["*://www.myntra.com/*"],
+      "js": ["content-scripts/myntra-script.js"],
       "run_at": "document_end"
     }
   ],
